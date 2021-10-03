@@ -49,6 +49,14 @@ php artisan serve
 php artisan send:post
 ```
 
+## [Command For cleaning cache and dumps]
+```bash
+composer dump-autoload
+```
+```bash
+php artisan optimize:clear
+```
+
 
 ## Endpoint1: /api/post/create
 data:{
