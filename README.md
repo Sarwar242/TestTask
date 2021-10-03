@@ -24,29 +24,40 @@ Laravel is accessible, powerful, and provides tools required for large, robust a
 ## Developer Docs
 
 ## Run This Project
-create .env file and assign database and mail config
+
+## Create .env file and assign database and mail config
+
+```bash
 composer install
+```
+```bash
 php artisan migrate
+```
+```bash
 php artisan db:seed
- [For Queue, should be on different tab]
+```
+ ## [For Queue, should be on different tab]
+```bash
  php artisan queue:work --queue=high,default
-
+```
+```bash
 php artisan serve
+```
 
-
-[Command For Sending Mail]
+## [Command For Sending Mail]
+```bash
 php artisan send:post
+```
 
 
-
-Endpoint1: /api/post/create
+## Endpoint1: /api/post/create
 data:{
     title,
     description,
     website_id
 }
 
-Endpoint2: /api/website/subscribe
+## Endpoint2: /api/website/subscribe
 data:{
     name,
     email,
